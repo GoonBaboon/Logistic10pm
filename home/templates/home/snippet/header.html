@@ -17,7 +17,7 @@
             <div class="collapse navbar-collapse">	
                 <ul class="navbar-nav gap-30 gap-lg-40 justify-content-end flex-grow-1 align-items-xl-center">
                     <li class="nav-item dropdown">
-                        <a class="nav-link active d-inline-flex gap-2 align-items-center" aria-current="page" href="#" aria-label="nav-links" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link active d-inline-flex gap-2 align-items-center" aria-current="page" href="{% url "home:index" %}" aria-label="nav-links" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="nav-title">
                                 Home
                             </span>
@@ -27,11 +27,11 @@
                               </span>										
                         </a>
                         <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="home-1.html" aria-label="single-pages">
+                            {% comment %} <li><a class="dropdown-item" href="home-1.html" aria-label="single-pages">
                                     <span>Home 1</span>												
                                 </a>
-                            </li>										
-                            <li><a class="dropdown-item" href="home-2.html" aria-label="single-pages">
+                            </li>										 {% endcomment %}
+                            {% comment %} <li><a class="dropdown-item" href="home-2.html" aria-label="single-pages">
                                     <span>Home 2</span>
                                 </a>
                             </li>	
@@ -54,7 +54,7 @@
                             <li><a class="dropdown-item" href="home-7.html" aria-label="single-pages">
                                     <span>Home 7</span>
                                 </a>
-                            </li>														
+                            </li>														 {% endcomment %}
                         </ul>																		
                     </li>
 
