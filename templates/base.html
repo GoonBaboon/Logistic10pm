@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+	<head>
+        {% load static %}
+		<meta charset="utf-8">
+        <meta name="theme-color" content="#253b2f">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Logistip is a new modern responsive Transport HTML5 template with user friendly stunning UX/UI. It is created with Bootstrap 5.x and suitable for running Transport Campaigns, It's the best choice for beach, business, cargo, clean, corporate, localization, logistic, logistics, logistics company, multipurpose, responsive, shipment, trailer, transport company, transportation vacation and much more.">
+		<title>Logistip - Home 1</title>
+		<link rel="shortcut icon" type="images/png" href="{% static 'kunal/images/fav-icon/favicon.ico' %}">
+
+		<!-- Google fonts -->	
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="../../css2?family=Lexend:wght@100..900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="{% static 'kunal/css/animate.css' %}">
+		<link rel="stylesheet" href="{% static 'kunal/css/all.min.css' %}">
+		<link rel="stylesheet" href="{% static 'kunal/css/odometer.css' %}">
+		<link rel="stylesheet" href="{% static 'kunal/css/swiper-bundle.min.css' %}">		
+		<link rel="stylesheet" href="{% static 'kunal/css/magnific-popup.css' %}">
+		<link rel="stylesheet" href="{% static 'kunal/css/leaflet.css' %}">
+		<link rel="stylesheet" href="{% static 'kunal/css/leaflet-routing-machine.css' %}">
+		<link rel="stylesheet" href="{% static 'kunal/css/style.css' %}">
+        {% block css %}
+        
+        {% endblock css %}
+
+        
+
+	</head>
+
+
+	<body>
+		<div class="wrapper">
+
+
+			<!--Header Section ======================-->
+			{% include 'home/snippet/header.html' %}
+			<!--Header Section ======================-->
+
+
+
+
+		{% block body %}
+			<!--Hero Section ======================-->
+			
+        {% endblock body %}
+			<script src="{% static 'kunal/js/jquery-3.7.0.min.js' %}"></script>	
+			<script src="{% static 'kunal/js/bootstrap.bundle.min.js' %}"></script>	
+			<script src="{% static 'kunal/js/swiper-bundle.min.js' %}"></script>	
+			<script src="{% static 'kunal/js/jquery.magnific-popup.min.js' %}"></script>		
+			<script src="{% static 'kunal/js/wow.min.js' %}"></script>	
+			<script src="{% static 'kunal/js/animate.js' %}"></script>					
+
+			<!-- map -->			
+			<script src="{% static 'kunal/js/leaflet.js' %}"></script>
+			<script src="{% static 'kunal/js/leaflet-routing-machine.min.js' %}"></script>
+			<script src="{% static 'kunal/js/leaflet-scripts.js' %}"></script>
+			<!-- map -->
+				
+			<script src="{% static 'kunal/js/jquery.progressScroll.min.js' %}"></script>	
+			<script src="{% static 'kunal/js/odometer.js' %}"></script>	
+			
+			<script src="{% static 'kunal/js/script.js' %}"></script>	
+
+
+            {% block js %}
+            {% endblock js %}
+
+	</body>
+
+</html>
